@@ -5,6 +5,7 @@ const paths = require('../utils/paths')
 
 module.exports = {
   devtool: '#source-map',
+  mode: 'development',
   externals: ['cozy'],
   module: {
     rules: [{
@@ -24,7 +25,6 @@ module.exports = {
       'cozy.client': 'cozy-client-js/dist/cozy-client.js',
       'cozy.bar': 'cozy-bar/dist/cozy-bar.js'
     }),
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]
 }
