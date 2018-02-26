@@ -11,6 +11,7 @@ Array [
     "externals": Array [
       "cozy",
     ],
+    "mode": "development",
     "module": Object {
       "noParse": Array [
         Object {},
@@ -264,9 +265,6 @@ Array [
           "cozy.bar": "cozy-bar/dist/cozy-bar.js",
           "cozy.client": "cozy-client-js/dist/cozy-client.js",
         },
-      },
-      Object {
-        "options": Object {},
       },
       Object {
         "fullBuildTimeout": 200,
@@ -302,6 +300,7 @@ Array [
     "externals": Object {
       "cozy-client-js": "cozy",
     },
+    "mode": "production",
     "module": Object {
       "noParse": Array [
         Object {},
@@ -537,21 +536,11 @@ Array [
           "__TARGET__": "\\"browser\\"",
         },
       },
-      Object {},
-      Object {
-        "options": Object {
-          "compress": Object {
-            "warnings": false,
-          },
-          "mangle": true,
-        },
-      },
       Object {
         "definitions": Object {
           "__DEVELOPMENT__": false,
           "__DEVTOOLS__": false,
           "__STACK_ASSETS__": true,
-          "process.env.NODE_ENV": "\\"production\\"",
         },
       },
     ],
@@ -584,6 +573,7 @@ Array [
     "externals": Array [
       "cozy",
     ],
+    "mode": "development",
     "module": Object {
       "noParse": Array [
         Object {},
@@ -847,9 +837,6 @@ Array [
         },
       },
       Object {
-        "options": Object {},
-      },
-      Object {
         "fullBuildTimeout": 200,
         "options": Object {},
         "requestTimeout": 10000,
@@ -880,6 +867,7 @@ Array [
     "entry": Array [
       ".tmp_test/test-app-vue/src/targets/mobile/index.js",
     ],
+    "mode": "production",
     "module": Object {
       "noParse": Array [
         Object {},
@@ -1123,21 +1111,11 @@ Array [
           "xhtml": false,
         },
       },
-      Object {},
-      Object {
-        "options": Object {
-          "compress": Object {
-            "warnings": false,
-          },
-          "mangle": true,
-        },
-      },
       Object {
         "definitions": Object {
           "__DEVELOPMENT__": false,
           "__DEVTOOLS__": false,
           "__STACK_ASSETS__": false,
-          "process.env.NODE_ENV": "\\"production\\"",
         },
       },
     ],
@@ -1170,6 +1148,7 @@ Array [
     "externals": Array [
       "cozy",
     ],
+    "mode": "development",
     "module": Object {
       "noParse": Array [
         Object {},
@@ -1423,9 +1402,6 @@ Array [
           "cozy.bar": "cozy-bar/dist/cozy-bar.js",
           "cozy.client": "cozy-client-js/dist/cozy-client.js",
         },
-      },
-      Object {
-        "options": Object {},
       },
       Object {
         "fullBuildTimeout": 200,
@@ -1462,6 +1438,7 @@ Array [
     "externals": Array [
       "cozy",
     ],
+    "mode": "development",
     "module": Object {
       "noParse": Array [
         Object {},
@@ -1715,9 +1692,6 @@ Array [
           "cozy.bar": "cozy-bar/dist/cozy-bar.js",
           "cozy.client": "cozy-client-js/dist/cozy-client.js",
         },
-      },
-      Object {
-        "options": Object {},
       },
       Object {
         "fullBuildTimeout": 200,
