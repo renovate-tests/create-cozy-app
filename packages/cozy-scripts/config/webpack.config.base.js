@@ -1,6 +1,5 @@
 'use strict'
 
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const PostCSSAssetsPlugin = require('postcss-assets-webpack-plugin')
 const paths = require('../utils/paths')
 
@@ -62,9 +61,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'defer'
-    }),
     extractor,
     new PostCSSAssetsPlugin({
       test: /\.css$/,

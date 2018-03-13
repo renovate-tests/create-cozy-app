@@ -3,6 +3,7 @@
 const paths = require('../utils/paths')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 
 const {production} = require('./webpack.vars')
 const pkg = require(paths.appPackageJson)
@@ -34,6 +35,9 @@ module.exports = {
       minify: {
         collapseWhitespace: true
       }
+    }),
+    new ScriptExtHtmlWebpackPlugin({
+      defaultAttribute: 'defer'
     })
   ]
 }

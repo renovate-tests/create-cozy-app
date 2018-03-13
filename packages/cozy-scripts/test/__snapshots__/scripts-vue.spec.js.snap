@@ -141,36 +141,6 @@ Array [
     },
     "plugins": Array [
       Object {
-        "options": Object {
-          "async": Object {
-            "test": Array [],
-          },
-          "custom": Array [],
-          "defaultAttribute": "defer",
-          "defer": Object {
-            "test": Array [],
-          },
-          "inline": Object {
-            "test": Array [],
-          },
-          "module": Object {
-            "test": Array [],
-          },
-          "prefetch": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "preload": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "removeInlinedAssets": true,
-          "sync": Object {
-            "test": Array [],
-          },
-        },
-      },
-      Object {
         "filename": "[name].css",
         "id": 1,
         "options": Object {},
@@ -247,6 +217,36 @@ Array [
           "template": ".tmp_test/test-app-vue/src/targets/browser/index.ejs",
           "title": "test-app-vue",
           "xhtml": false,
+        },
+      },
+      Object {
+        "options": Object {
+          "async": Object {
+            "test": Array [],
+          },
+          "custom": Array [],
+          "defaultAttribute": "defer",
+          "defer": Object {
+            "test": Array [],
+          },
+          "inline": Object {
+            "test": Array [],
+          },
+          "module": Object {
+            "test": Array [],
+          },
+          "prefetch": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "preload": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "removeInlinedAssets": true,
+          "sync": Object {
+            "test": Array [],
+          },
         },
       },
       Object {
@@ -423,36 +423,6 @@ Array [
     },
     "plugins": Array [
       Object {
-        "options": Object {
-          "async": Object {
-            "test": Array [],
-          },
-          "custom": Array [],
-          "defaultAttribute": "defer",
-          "defer": Object {
-            "test": Array [],
-          },
-          "inline": Object {
-            "test": Array [],
-          },
-          "module": Object {
-            "test": Array [],
-          },
-          "prefetch": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "preload": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "removeInlinedAssets": true,
-          "sync": Object {
-            "test": Array [],
-          },
-        },
-      },
-      Object {
         "filename": "[name].[hash].min.css",
         "id": 1,
         "options": Object {},
@@ -529,6 +499,36 @@ Array [
           "template": ".tmp_test/test-app-vue/src/targets/browser/index.ejs",
           "title": "test-app-vue",
           "xhtml": false,
+        },
+      },
+      Object {
+        "options": Object {
+          "async": Object {
+            "test": Array [],
+          },
+          "custom": Array [],
+          "defaultAttribute": "defer",
+          "defer": Object {
+            "test": Array [],
+          },
+          "inline": Object {
+            "test": Array [],
+          },
+          "module": Object {
+            "test": Array [],
+          },
+          "prefetch": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "preload": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "removeInlinedAssets": true,
+          "sync": Object {
+            "test": Array [],
+          },
         },
       },
       Object {
@@ -703,36 +703,6 @@ Array [
     },
     "plugins": Array [
       Object {
-        "options": Object {
-          "async": Object {
-            "test": Array [],
-          },
-          "custom": Array [],
-          "defaultAttribute": "defer",
-          "defer": Object {
-            "test": Array [],
-          },
-          "inline": Object {
-            "test": Array [],
-          },
-          "module": Object {
-            "test": Array [],
-          },
-          "prefetch": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "preload": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "removeInlinedAssets": true,
-          "sync": Object {
-            "test": Array [],
-          },
-        },
-      },
-      Object {
         "filename": "[name].css",
         "id": 1,
         "options": Object {},
@@ -822,6 +792,36 @@ Array [
           "template": ".tmp_test/test-app-vue/src/targets/mobile/index.ejs",
           "title": "test-app-vue",
           "xhtml": false,
+        },
+      },
+      Object {
+        "options": Object {
+          "async": Object {
+            "test": Array [],
+          },
+          "custom": Array [],
+          "defaultAttribute": "defer",
+          "defer": Object {
+            "test": Array [],
+          },
+          "inline": Object {
+            "test": Array [],
+          },
+          "module": Object {
+            "test": Array [],
+          },
+          "prefetch": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "preload": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "removeInlinedAssets": true,
+          "sync": Object {
+            "test": Array [],
+          },
         },
       },
       Object {
@@ -990,36 +990,6 @@ Array [
     },
     "plugins": Array [
       Object {
-        "options": Object {
-          "async": Object {
-            "test": Array [],
-          },
-          "custom": Array [],
-          "defaultAttribute": "defer",
-          "defer": Object {
-            "test": Array [],
-          },
-          "inline": Object {
-            "test": Array [],
-          },
-          "module": Object {
-            "test": Array [],
-          },
-          "prefetch": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "preload": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "removeInlinedAssets": true,
-          "sync": Object {
-            "test": Array [],
-          },
-        },
-      },
-      Object {
         "filename": "[name].[hash].min.css",
         "id": 1,
         "options": Object {},
@@ -1109,6 +1079,36 @@ Array [
           "template": ".tmp_test/test-app-vue/src/targets/mobile/index.ejs",
           "title": "test-app-vue",
           "xhtml": false,
+        },
+      },
+      Object {
+        "options": Object {
+          "async": Object {
+            "test": Array [],
+          },
+          "custom": Array [],
+          "defaultAttribute": "defer",
+          "defer": Object {
+            "test": Array [],
+          },
+          "inline": Object {
+            "test": Array [],
+          },
+          "module": Object {
+            "test": Array [],
+          },
+          "prefetch": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "preload": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "removeInlinedAssets": true,
+          "sync": Object {
+            "test": Array [],
+          },
         },
       },
       Object {
@@ -1278,36 +1278,6 @@ Array [
     },
     "plugins": Array [
       Object {
-        "options": Object {
-          "async": Object {
-            "test": Array [],
-          },
-          "custom": Array [],
-          "defaultAttribute": "defer",
-          "defer": Object {
-            "test": Array [],
-          },
-          "inline": Object {
-            "test": Array [],
-          },
-          "module": Object {
-            "test": Array [],
-          },
-          "prefetch": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "preload": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "removeInlinedAssets": true,
-          "sync": Object {
-            "test": Array [],
-          },
-        },
-      },
-      Object {
         "filename": "[name].css",
         "id": 1,
         "options": Object {},
@@ -1384,6 +1354,36 @@ Array [
           "template": ".tmp_test/test-app-vue/src/targets/browser/index.ejs",
           "title": "test-app-vue",
           "xhtml": false,
+        },
+      },
+      Object {
+        "options": Object {
+          "async": Object {
+            "test": Array [],
+          },
+          "custom": Array [],
+          "defaultAttribute": "defer",
+          "defer": Object {
+            "test": Array [],
+          },
+          "inline": Object {
+            "test": Array [],
+          },
+          "module": Object {
+            "test": Array [],
+          },
+          "prefetch": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "preload": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "removeInlinedAssets": true,
+          "sync": Object {
+            "test": Array [],
+          },
         },
       },
       Object {
@@ -1568,36 +1568,6 @@ Array [
     },
     "plugins": Array [
       Object {
-        "options": Object {
-          "async": Object {
-            "test": Array [],
-          },
-          "custom": Array [],
-          "defaultAttribute": "defer",
-          "defer": Object {
-            "test": Array [],
-          },
-          "inline": Object {
-            "test": Array [],
-          },
-          "module": Object {
-            "test": Array [],
-          },
-          "prefetch": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "preload": Object {
-            "chunks": "initial",
-            "test": Array [],
-          },
-          "removeInlinedAssets": true,
-          "sync": Object {
-            "test": Array [],
-          },
-        },
-      },
-      Object {
         "filename": "[name].css",
         "id": 1,
         "options": Object {},
@@ -1674,6 +1644,36 @@ Array [
           "template": ".tmp_test/test-app-vue/src/targets/browser/index.ejs",
           "title": "test-app-vue",
           "xhtml": false,
+        },
+      },
+      Object {
+        "options": Object {
+          "async": Object {
+            "test": Array [],
+          },
+          "custom": Array [],
+          "defaultAttribute": "defer",
+          "defer": Object {
+            "test": Array [],
+          },
+          "inline": Object {
+            "test": Array [],
+          },
+          "module": Object {
+            "test": Array [],
+          },
+          "prefetch": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "preload": Object {
+            "chunks": "initial",
+            "test": Array [],
+          },
+          "removeInlinedAssets": true,
+          "sync": Object {
+            "test": Array [],
+          },
         },
       },
       Object {

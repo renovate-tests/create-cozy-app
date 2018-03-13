@@ -3,6 +3,7 @@
 const webpack = require('webpack')
 const paths = require('../utils/paths')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const pkg = require(paths.appPackageJson)
 
 module.exports = {
@@ -27,6 +28,9 @@ module.exports = {
       minify: {
         collapseWhitespace: true
       }
+    }),
+    new ScriptExtHtmlWebpackPlugin({
+      defaultAttribute: 'defer'
     }),
     new webpack.DefinePlugin({
       __TARGET__: JSON.stringify('browser')
