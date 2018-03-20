@@ -1,4 +1,4 @@
-const { extractor } = require('cozy-scripts/config/webpack.vars')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const configs = [
   {
@@ -9,9 +9,10 @@ const configs = [
       rules: [
         {
           test: /\.css$/,
-          loader: extractor.extract({
+          loader: {
             fallback: 'style-loader',
             use: [
+              MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
                 options: {
@@ -30,14 +31,15 @@ const configs = [
                 }
               }
             ]
-          })
+          }
         },
         {
           test: /\.styl$/,
           exclude: /(node_modules|cozy-ui\/react)/,
-          loader: extractor.extract({
+          loader: {
             fallback: 'style-loader',
             use: [
+              MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
                 options: {
@@ -56,7 +58,7 @@ const configs = [
               },
               'stylus-loader'
             ]
-          })
+          }
         }
       ]
     }
@@ -73,9 +75,10 @@ const configs = [
         {
           test: /\.styl$/,
           exclude: /(node_modules|cozy-ui\/react)/,
-          loader: extractor.extract({
+          loader: {
             fallback: 'style-loader',
             use: [
+              MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
                 options: {
@@ -96,7 +99,7 @@ const configs = [
               },
               'stylus-loader'
             ]
-          })
+          }
         }
       ]
     }

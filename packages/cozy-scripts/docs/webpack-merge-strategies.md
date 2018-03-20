@@ -21,6 +21,7 @@ Let's take a case where you want to use the `webpack.bundle.default` but you wan
 // app.config.js
 
 const configs = require('cozy-scripts/config/webpack.bundle.default.js')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = [configs,
   {
@@ -42,9 +43,10 @@ module.exports = [configs,
           // the exclude property must also be the same than the loader
           // you want to replace
           exclude: /(node_modules|cozy-ui\/react)/,
-          loader: extractor.extract({
+          loader: {
             fallback: 'style-loader',
             use: [
+              MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
                 options: {
@@ -65,7 +67,7 @@ module.exports = [configs,
               },
               'stylus-loader'
             ]
-          })
+          }
         }
       ]
     }

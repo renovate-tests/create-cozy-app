@@ -1,6 +1,6 @@
 'use strict'
 
-const { extractor } = require('./webpack.vars')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   __mergeStrategy: {
@@ -15,30 +15,28 @@ module.exports = {
       {
         test: /\.styl$/,
         exclude: /(node_modules|cozy-ui\/react)/,
-        loader: extractor.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                sourceMap: true,
-                importLoaders: 1,
-                modules: true,
-                localIdentName: '[local]--[hash:base64:5]'
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              importLoaders: 1,
+              modules: true,
+              localIdentName: '[local]--[hash:base64:5]'
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugins: function () {
+                return [ require('autoprefixer')({ browsers: ['last 2 versions'] }) ]
               }
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                sourceMap: true,
-                plugins: function () {
-                  return [ require('autoprefixer')({ browsers: ['last 2 versions'] }) ]
-                }
-              }
-            },
-            'stylus-loader'
-          ]
-        })
+            }
+          },
+          'stylus-loader'
+        ]
       }
     ]
   }
