@@ -139,16 +139,16 @@ The default basic configuration of the application.
 ##### Rules
 - all `.js` (excluding `node_modules`, `cozy-bar` and `cozy-client-js`) to be loaded using `babel-loader` (with `cacheDirectory` option for caching in `node_modules/.cache/babel-loader`)
 - all `.json` files to be loaded using `json-loader`
-- all `.css` to be loaded using `extract-text-webpack-plugin` imported from `webpack.vars.js` with options:
+- all `.css` to be loaded with options:
     - `style-loader` as fallback
+    - the `mini-css-extract-plugin` loader
     - `css-loader` with `sourceMap`
     - `postcss-loader` to optimize css output code with `sourceMap` and `autoprefixer` plugin to `{ browsers: ['last 2 versions'] }`
 
 A specific `noParse` property is enabled on `/localforage/dist`.
 
 ##### Plugins:
-- `script-ext-html-webpack-plugin` to load the main application `.js` file using the `defer` attribute (to be loaded after the initial loading)
-- `extract-text-webpack-plugin` imported from `webpack.vars.js`
+- `mini-css-extract-plugin` to extract all css code and output in a css build. It use `[name].[hash].min.css` as `filename` in production mode (else `[name].css`) and `[name].[id].[hash].min.css` as `chunkFilename` in production mode (else `[name].[id].css`).
 - `postcss-assets-webpack-plugin` (logs from this plugin are shown only in `--debug` mode) to load all `.css` files with:
     - `css-mqpacker` (pack all CSS media query rules into one)
     - `postcss-discard-duplicates` (remove duplicates)
@@ -161,6 +161,7 @@ This configuration will allow to load styles from `cozy-ui`.
 
 It adds a rule for all `.styl` files excluding `node_modules` and `node_modules/cozy-ui/react` to be loaded using:
 - `style-loader` as fallback
+- the `mini-css-extract-plugin` loader
 - `css-loader` with `sourceMap`
 - `postcss-loader` to optimize css output code with `sourceMap` and `autoprefixer` plugin to `{ browsers: ['last 2 versions'] }`
 - `stylus-loader`
@@ -175,6 +176,7 @@ This configuration is specific to `react` components usage from `cozy-ui`, since
 
 It adds a rule for all `.styl` files from `cozy-ui/react` to be loaded using:
 - `style-loader` as fallback
+- the `mini-css-extract-plugin` loader
 - `css-loader` with `modules`, `sourceMap` and `[local]--[hash:base64:5]` as `localIdentName`
 - `postcss-loader` to optimize css output code with `sourceMap` and `autoprefixer` plugin to `{ browsers: ['last 2 versions'] }`
 - `stylus-loader`
@@ -185,6 +187,7 @@ This configuration will allow to use `css-modules` with stylus files. To overloa
 
 It adds a rule for all `.styl` files excluding `node_modules` and `node_modules/cozy-ui/react` to be loaded using:
 - `style-loader` as fallback
+- the `mini-css-extract-plugin` loader
 - `css-loader` with `modules`, `sourceMap` and `[local]--[hash:base64:5]` as `localIdentName`
 - `postcss-loader` to optimize css output code with `sourceMap` and `autoprefixer` plugin to `{ browsers: ['last 2 versions'] }`
 - `stylus-loader`
@@ -320,6 +323,7 @@ It will:
     - `inject` to `false`
     - `chunks`: ['app']
     - `minify` with `collapseWhitespace` to `true`
+- `script-ext-html-webpack-plugin` to load the main application `.js` file using the `defer` attribute (to be loaded after the initial loading)
 - `webpack.DefinePlugin` to define globals variables at compile time:
     - `__TARGET__` to `browser`
 
@@ -335,6 +339,7 @@ It will:
     - `chunks`: ['app']
     - `inject` to `head`
     - `minify` with `collapseWhitespace` to `true`
+- `script-ext-html-webpack-plugin` to load the main application `.js` file using the `defer` attribute (to be loaded after the initial loading)
 - `webpack.DefinePlugin` to define globals variables at compile time:
     - `__ALLOW_HTTP__` to `false` if `production` environment, `true` for other environments
     - `__TARGET__` to `mobile`
@@ -350,6 +355,7 @@ It will:
 This file is used to get webpack variables. They are necessary to build correctly the application. It will export these following variables:
 - `target` according to `NODE_ENV` global variable (`target:environment`)
 - `environment` according to `NODE_ENV` global variable (`target:environment`)
-- `extractor` which is the `extract-text-webpack-plugin` plugin instance. It's configured to output css files using `[name].[hash].min.css` format in 'production' environment and `[name].css` format in other environments.
+- `isDebugMode` to know if we use cozy-scripts in a debug mode
+- `addAnalyzer` to know if we have to add the `webpack-bundle-analyzer` configuration file to the final build (builds contents analyzer)
 
-> If no environment variable `NODE_ENV` is found, it will be `browser:development` by default.
+> If no environment variable `NODE_ENV` is found at this step, it will be `browser:development` by default.
