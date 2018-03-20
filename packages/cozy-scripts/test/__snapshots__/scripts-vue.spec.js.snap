@@ -26,18 +26,9 @@ Array [
           "test": Object {},
         },
         Object {
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -53,7 +44,6 @@ Array [
               },
             },
           ],
-          "test": Object {},
         },
         Object {
           "exclude": Object {},
@@ -74,18 +64,9 @@ Array [
         },
         Object {
           "exclude": Object {},
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -99,11 +80,8 @@ Array [
                 "sourceMap": true,
               },
             },
-            Object {
-              "loader": "stylus-loader",
-            },
+            "stylus-loader",
           ],
-          "test": Object {},
         },
         Object {
           "include": Object {},
@@ -137,9 +115,10 @@ Array [
     },
     "plugins": Array [
       Object {
-        "filename": "[name].css",
-        "id": 1,
-        "options": Object {},
+        "options": Object {
+          "chunkFilename": "[name].[id].css",
+          "filename": "[name].css",
+        },
       },
       Object {
         "options": Object {
@@ -311,18 +290,9 @@ Array [
           "test": Object {},
         },
         Object {
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -338,7 +308,6 @@ Array [
               },
             },
           ],
-          "test": Object {},
         },
         Object {
           "exclude": Object {},
@@ -359,18 +328,9 @@ Array [
         },
         Object {
           "exclude": Object {},
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -384,11 +344,8 @@ Array [
                 "sourceMap": true,
               },
             },
-            Object {
-              "loader": "stylus-loader",
-            },
+            "stylus-loader",
           ],
-          "test": Object {},
         },
         Object {
           "include": Object {},
@@ -415,14 +372,16 @@ Array [
     },
     "plugins": Array [
       Object {
-        "filename": "[name].[hash].min.css",
-        "id": 1,
-        "options": Object {},
+        "options": Object {
+          "chunkFilename": "[name].[id].[hash].min.css",
+          "filename": "[name].[hash].min.css",
+        },
       },
       Object {
         "options": Object {
           "log": false,
           "plugins": Array [
+            null,
             null,
             null,
             null,
@@ -580,18 +539,9 @@ Array [
           "test": Object {},
         },
         Object {
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -607,7 +557,6 @@ Array [
               },
             },
           ],
-          "test": Object {},
         },
         Object {
           "exclude": Object {},
@@ -628,18 +577,9 @@ Array [
         },
         Object {
           "exclude": Object {},
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -653,11 +593,8 @@ Array [
                 "sourceMap": true,
               },
             },
-            Object {
-              "loader": "stylus-loader",
-            },
+            "stylus-loader",
           ],
-          "test": Object {},
         },
         Object {
           "include": Object {},
@@ -691,9 +628,10 @@ Array [
     },
     "plugins": Array [
       Object {
-        "filename": "[name].css",
-        "id": 1,
-        "options": Object {},
+        "options": Object {
+          "chunkFilename": "[name].[id].css",
+          "filename": "[name].css",
+        },
       },
       Object {
         "options": Object {
@@ -870,18 +808,9 @@ Array [
           "test": Object {},
         },
         Object {
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -897,7 +826,6 @@ Array [
               },
             },
           ],
-          "test": Object {},
         },
         Object {
           "exclude": Object {},
@@ -918,18 +846,9 @@ Array [
         },
         Object {
           "exclude": Object {},
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -943,11 +862,8 @@ Array [
                 "sourceMap": true,
               },
             },
-            Object {
-              "loader": "stylus-loader",
-            },
+            "stylus-loader",
           ],
-          "test": Object {},
         },
         Object {
           "include": Object {},
@@ -974,14 +890,16 @@ Array [
     },
     "plugins": Array [
       Object {
-        "filename": "[name].[hash].min.css",
-        "id": 1,
-        "options": Object {},
+        "options": Object {
+          "chunkFilename": "[name].[id].[hash].min.css",
+          "filename": "[name].[hash].min.css",
+        },
       },
       Object {
         "options": Object {
           "log": false,
           "plugins": Array [
+            null,
             null,
             null,
             null,
@@ -1147,18 +1065,9 @@ Array [
           "test": Object {},
         },
         Object {
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -1174,7 +1083,6 @@ Array [
               },
             },
           ],
-          "test": Object {},
         },
         Object {
           "exclude": Object {},
@@ -1195,18 +1103,9 @@ Array [
         },
         Object {
           "exclude": Object {},
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -1220,11 +1119,8 @@ Array [
                 "sourceMap": true,
               },
             },
-            Object {
-              "loader": "stylus-loader",
-            },
+            "stylus-loader",
           ],
-          "test": Object {},
         },
         Object {
           "include": Object {},
@@ -1258,9 +1154,10 @@ Array [
     },
     "plugins": Array [
       Object {
-        "filename": "[name].css",
-        "id": 1,
-        "options": Object {},
+        "options": Object {
+          "chunkFilename": "[name].[id].css",
+          "filename": "[name].css",
+        },
       },
       Object {
         "options": Object {
@@ -1433,18 +1330,9 @@ Array [
           "test": Object {},
         },
         Object {
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -1460,7 +1348,6 @@ Array [
               },
             },
           ],
-          "test": Object {},
         },
         Object {
           "exclude": Object {},
@@ -1481,18 +1368,9 @@ Array [
         },
         Object {
           "exclude": Object {},
-          "loader": Array [
-            Object {
-              "loader": ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/extract-text-webpack-plugin/dist/loader.js",
-              "options": Object {
-                "id": 1,
-                "omit": 1,
-                "remove": true,
-              },
-            },
-            Object {
-              "loader": "style-loader",
-            },
+          "test": Object {},
+          "use": Array [
+            ".tmp_test/test-app-vue/node_modules/cozy-scripts/node_modules/mini-css-extract-plugin/dist/loader.js",
             Object {
               "loader": "css-loader",
               "options": Object {
@@ -1506,11 +1384,8 @@ Array [
                 "sourceMap": true,
               },
             },
-            Object {
-              "loader": "stylus-loader",
-            },
+            "stylus-loader",
           ],
-          "test": Object {},
         },
         Object {
           "include": Object {},
@@ -1544,9 +1419,10 @@ Array [
     },
     "plugins": Array [
       Object {
-        "filename": "[name].css",
-        "id": 1,
-        "options": Object {},
+        "options": Object {
+          "chunkFilename": "[name].[id].css",
+          "filename": "[name].css",
+        },
       },
       Object {
         "options": Object {
