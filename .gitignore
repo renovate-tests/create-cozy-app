@@ -3,6 +3,9 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# lerna
+lerna-debug.log
+
 # OS generated files
 .DS_Store
 .DS_Store?
