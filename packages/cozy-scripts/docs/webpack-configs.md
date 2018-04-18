@@ -231,6 +231,8 @@ It will add two rules:
     - `path` to `img`, the ouput folder
     - `name` to `[name].[hash].[ext]` for production environment, `[name].[ext]` for other environments
 
+It will also add the plugin from `svg-sprite-loader` to be use in the extract mode (when loaded inside html or css codes for example).
+
 ### `webpack.config.preact.js`
 
 A config to resolve all `react` aliases using [`Preact`](https://preactjs.com) instead.
