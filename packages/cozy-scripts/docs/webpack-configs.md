@@ -164,11 +164,7 @@ It adds a rule for all `.styl` files excluding `node_modules` and `node_modules/
 - the `mini-css-extract-plugin` loader
 - `css-loader` with `sourceMap`
 - `postcss-loader` to optimize css output code with `sourceMap` and `autoprefixer` plugin to `{ browsers: ['last 2 versions'] }`
-- `stylus-loader`
-
-It uses two plugins:
-- `svg-sprite-loader/plugin` to merge the built svg sprite from `cozy-ui` into the application's one
-- `webpack.LoaderOptionsPlugin` to make the global stylus loader use the stylus from `cozy-ui`
+- `stylus-loader` configured with the stylus plugin from `cozy-ui/stylus`
 
 ### `webpack.config.cozy-ui.react.js`
 
@@ -179,7 +175,7 @@ It adds a rule for all `.styl` files from `cozy-ui/react` to be loaded using:
 - the `mini-css-extract-plugin` loader
 - `css-loader` with `modules`, `sourceMap` and `[local]--[hash:base64:5]` as `localIdentName`
 - `postcss-loader` to optimize css output code with `sourceMap` and `autoprefixer` plugin to `{ browsers: ['last 2 versions'] }`
-- `stylus-loader`
+- `stylus-loader` configured with the stylus plugin from `cozy-ui/stylus`
 
 ### `webpack.config.css-modules.js`
 
@@ -190,7 +186,7 @@ It adds a rule for all `.styl` files excluding `node_modules` and `node_modules/
 - the `mini-css-extract-plugin` loader
 - `css-loader` with `modules`, `sourceMap` and `[local]--[hash:base64:5]` as `localIdentName`
 - `postcss-loader` to optimize css output code with `sourceMap` and `autoprefixer` plugin to `{ browsers: ['last 2 versions'] }`
-- `stylus-loader`
+- `stylus-loader` configured with the stylus plugin from `cozy-ui/stylus`
 
 ### `webpack.config.eslint.js`
 

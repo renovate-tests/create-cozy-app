@@ -1,6 +1,8 @@
 'use strict'
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const paths = require('../utils/paths')
+const cozyUIPlugin = require(paths.appCozyUiStylus)
 
 module.exports = {
   module: {
@@ -28,7 +30,12 @@ module.exports = {
               }
             }
           },
-          'stylus-loader'
+          {
+            loader: 'stylus-loader',
+            options: {
+              use: [ cozyUIPlugin() ]
+            }
+          }
         ]
       }
     ]

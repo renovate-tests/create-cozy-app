@@ -148,7 +148,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -171,7 +178,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -245,18 +259,6 @@ Array [
             ],
           },
           "symbols": Array [],
-        },
-      },
-      Object {
-        "options": Object {
-          "options": Object {
-            "stylus": Object {
-              "use": Array [
-                null,
-              ],
-            },
-          },
-          "test": Object {},
         },
       },
       Object {},
@@ -443,7 +445,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -466,7 +475,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -534,18 +550,6 @@ Array [
             ],
           },
           "symbols": Array [],
-        },
-      },
-      Object {
-        "options": Object {
-          "options": Object {
-            "stylus": Object {
-              "use": Array [
-                null,
-              ],
-            },
-          },
-          "test": Object {},
         },
       },
       Object {},
@@ -723,7 +727,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -746,7 +757,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -820,18 +838,6 @@ Array [
             ],
           },
           "symbols": Array [],
-        },
-      },
-      Object {
-        "options": Object {
-          "options": Object {
-            "stylus": Object {
-              "use": Array [
-                null,
-              ],
-            },
-          },
-          "test": Object {},
         },
       },
       Object {},
@@ -1023,7 +1029,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -1046,7 +1059,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -1114,18 +1134,6 @@ Array [
             ],
           },
           "symbols": Array [],
-        },
-      },
-      Object {
-        "options": Object {
-          "options": Object {
-            "stylus": Object {
-              "use": Array [
-                null,
-              ],
-            },
-          },
-          "test": Object {},
         },
       },
       Object {},
@@ -1311,7 +1319,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -1334,7 +1349,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -1408,18 +1430,6 @@ Array [
             ],
           },
           "symbols": Array [],
-        },
-      },
-      Object {
-        "options": Object {
-          "options": Object {
-            "stylus": Object {
-              "use": Array [
-                null,
-              ],
-            },
-          },
-          "test": Object {},
         },
       },
       Object {},
@@ -1607,7 +1617,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -1630,7 +1647,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -1704,18 +1728,6 @@ Array [
             ],
           },
           "symbols": Array [],
-        },
-      },
-      Object {
-        "options": Object {
-          "options": Object {
-            "stylus": Object {
-              "use": Array [
-                null,
-              ],
-            },
-          },
-          "test": Object {},
         },
       },
       Object {},
@@ -1952,7 +1964,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -1975,7 +1994,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -2243,7 +2269,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
@@ -2266,7 +2299,14 @@ Array [
                 "sourceMap": true,
               },
             },
-            "stylus-loader",
+            Object {
+              "loader": "stylus-loader",
+              "options": Object {
+                "use": Array [
+                  null,
+                ],
+              },
+            },
           ],
         },
         Object {
